@@ -1,140 +1,97 @@
-# Frontend Developer Portfolio Template
+# Portfolio Personal - Iván Martínez
 
-[Demo](https://www.devportfoliotemplates.com/portfolio-templates/frontend-developer)
+¡Bienvenido a mi portfolio personal! Este sitio web muestra mis proyectos, habilidades y experiencia como desarrollador de aplicaciones móviles y web.
 
-## Getting Started
+## Tecnologías Utilizadas
 
-You have two options to get started with this template:
+- **Frontend**: Next.js, TypeScript, Tailwind CSS
+- **Animaciones**: Framer Motion
+- **Despliegue**: Vercel
 
-### Option 1: Using Git Sparse Checkout
+## Requisitos Previos
 
-If you want to clone only this specific template:
+Antes de comenzar, asegúrate de tener instalado:
 
-```bash
-git clone --no-checkout https://github.com/devportfoliotemplates/devportfoliotemplates.git
-cd devportfoliotemplates
-git sparse-checkout init --cone
-git sparse-checkout set frontend-developer-portfolio-template
-git checkout
+- [Node.js](https://nodejs.org/) (versión 18 o superior)
+- [npm](https://www.npmjs.com/) o [Yarn](https://yarnpkg.com/)
+- [Git](https://git-scm.com/)
+
+## Cómo Ejecutar el Proyecto Localmente
+
+Sigue estos pasos para configurar y ejecutar el proyecto en tu máquina local:
+
+1. **Clonar el repositorio**
+   ```bash
+   git clone https://github.com/tu-usuario/tu-portfolio.git
+   cd tu-portfolio
+   ```
+
+2. **Instalar dependencias**
+   ```bash
+   npm install
+   # o
+   yarn install
+   ```
+
+3. **Iniciar el servidor de desarrollo**
+   ```bash
+   npm run dev
+   # o
+   yarn dev
+   ```
+
+4. **Abrir en el navegador**
+   Abre [http://localhost:3000](http://localhost:3000) en tu navegador para ver el proyecto.
+
+## Estructura del Proyecto
+
+```
+.
+├── app/                    # Directorio principal de la aplicación
+│   ├── components/         # Componentes reutilizables
+│   ├── globals.css         # Estilos globales
+│   ├── layout.tsx          # Layout principal
+│   └── page.tsx            # Página principal
+├── public/                 # Archivos estáticos
+│   ├── projects/           # Imágenes de proyectos
+│   └── ...
+└── ...
 ```
 
-### Option 2: Direct Download
+## Personalización
 
-You can download this template as a ZIP file:
+### Cambiar Información Personal
 
-1. Visit [download-directory.github.io](https://download-directory.github.io/)
-2. Paste the URL of this portfolio folder: `https://github.com/devportfoliotemplates/devportfoliotemplates/tree/main/frontend-developer-portfolio-template`
-3. Download and extract the ZIP file
+1. **Datos personales**: Modifica el archivo `app/components/HeroSection.tsx`
+2. **Habilidades**: Actualiza el array en `app/components/SkillsSection.tsx`
+3. **Proyectos**: Edita el array en `app/components/ProjectsSection.tsx`
+4. **Información de contacto**: Cambia los datos en `app/components/ContactSection.tsx`
 
-### Running the Template
+### Estilos
 
-Once you have the template:
+- **Colores**: Modifica las variables de color en `app/globals.css`
+- **Tipografía**: Ajusta las fuentes en `app/layout.tsx`
+- **Diseño responsive**: Usa las clases de Tailwind CSS en los componentes
 
-1. Install dependencies:
+## Despliegue
 
-```bash
-npm install
-# or
-yarn install
-# or
-pnpm install
-```
+Este proyecto está configurado para ser desplegado fácilmente en [Vercel](https://vercel.com/):
 
-2. Run the development server:
+1. Haz fork de este repositorio
+2. Crea una cuenta en Vercel (si no tienes una)
+3. Conecta tu repositorio de GitHub
+4. Haz clic en "Deploy"
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+## Licencia
 
-3. Open [http://localhost:3000](http://localhost:3000) in your browser to see the portfolio.
+Este proyecto está bajo la licencia MIT. Consulta el archivo [LICENSE](LICENSE) para más información.
 
-## Customization
+## Contacto
 
-### Personal Information
+¿Tienes alguna pregunta o sugerencia? No dudes en contactarme:
 
-1. Update metadata in `app/layout.tsx`:
+- Correo: [ivanmart9503@gmail.com](mailto:ivanmart9503@gmail.com)
+- LinkedIn: [Iván Martínez](https://www.linkedin.com/in/ivanmart9503)
+- Teléfono: +52 492 239 4111
 
-   - Site title
-   - Description
-   - Open Graph metadata
-   - Favicon
-
-2. Modify content in `app/page.tsx`:
-
-   - Hero section
-   - About section
-   - Projects
-   - Contact information
-
-3. Replace assets:
-   - Replace images in the `public` directory
-   - Update social media icons
-   - Modify logo if needed
-
-### Styling
-
-1. Colors and Theme:
-
-   - Customize colors in `tailwind.config.js`
-   - Modify theme variables in `app/globals.css`
-
-2. Typography:
-
-   - Update font families in `tailwind.config.js`
-   - Modify text sizes and weights
-
-3. Layout:
-   - Adjust spacing and padding in component files
-   - Modify responsive breakpoints in `tailwind.config.js`
-
-## Troubleshooting
-
-### Common Issues
-
-1. **Build Errors**
-
-   - Ensure all dependencies are installed
-   - Clear `.next` folder and node_modules
-   - Run `npm install` again
-
-2. **Styling Issues**
-
-   - Run `npm run build` to ensure TailwindCSS classes are generated
-   - Check for conflicting styles in `globals.css`
-
-3. **Image Loading**
-   - Verify images are in the correct format (PNG, JPG, WebP)
-   - Check image paths are correct
-   - Ensure images are in the `public` directory
-
-## Deployment
-
-Follow these steps to deploy your portfolio for free using GitHub and Vercel:
-
-1. Create a new GitHub repository
-
-2. Push your portfolio to GitHub
-
-3. Deploy with Vercel:
-   - Go to [Vercel](https://vercel.com)
-   - Sign up or log in with GitHub
-   - Click "New Project"
-   - Import your GitHub repository
-   - Vercel will automatically detect Next.js
-   - Click "Deploy"
-
-Your portfolio will be live in minutes with a free Vercel domain (e.g., `your-repo.vercel.app`). You can later add a custom domain in your Vercel project settings.
-
-## Support
-
-If you find these templates helpful, please consider:
-
-- Starring the repository ⭐
-- Sharing with other developers
-- [Buying me a coffee](https://www.buymeacoffee.com/andreiancu) ☕
-
-For issues and feature requests, please [create an issue](https://github.com/devportfoliotemplates/devportfoliotemplates/issues).
+¡Gracias por visitar mi portfolio! 

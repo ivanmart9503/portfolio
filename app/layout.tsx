@@ -35,25 +35,25 @@ export const metadata: Metadata = {
 	openGraph: {
 		title: 'Iván Martínez',
 		description: 'Bienvenido a mi portfolio, aquí encontrarás información sobre mis proyectos, habilidades y contacto.',
-		url: 'https://your-domain.com',
+		url: 'https://portfolio-ivan-martinezs-projects-36bb417d.vercel.app/',
 		siteName: 'Iván Martínez',
 		images: [
 			{
-				url: '/og-image.jpg',
+				url: '/preview.png',
 				width: 1200,
 				height: 630,
 				alt: 'Iván Martínez',
 			},
 		],
-		locale: 'en_US',
+		locale: 'es_MX',
 		type: 'website',
 	},
 	twitter: {
 		card: 'summary_large_image',
 		title: 'Iván Martínez',
 		description: 'Bienvenido a mi portfolio, aquí encontrarás información sobre mis proyectos, habilidades y contacto.',
-		creator: '@yourusername',
-		images: ['/og-image.jpg'],
+		creator: '@ivanmart9503',
+		images: ['/preview.png'],
 	},
 	robots: {
 		index: true,
@@ -74,7 +74,7 @@ export default function RootLayout({
 	children: React.ReactNode;
 }>) {
 	return (
-		<html lang="en">
+		<html lang="es">
 			<body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>{children}</body>
 		</html>
 	);
