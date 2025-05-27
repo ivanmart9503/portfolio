@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* CircleAvatar responsive styles */
+[data-sm-size] {
+  @media (min-width: 640px) {
+    width: var(--sm-size, var(--size)) !important;
+    height: var(--sm-size, var(--size)) !important;
+  }
+}
+
+[data-md-size] {
+  @media (min-width: 768px) {
+    width: var(--md-size, var(--sm-size, var(--size))) !important;
+    height: var(--md-size, var(--sm-size, var(--size))) !important;
+  }
+}
+
+[data-lg-size] {
+  @media (min-width: 1024px) {
+    width: var(--lg-size, var(--md-size, var(--sm-size, var(--size)))) !important;
+    height: var(--lg-size, var(--md-size, var(--sm-size, var(--size)))) !important;
+  }
+}
