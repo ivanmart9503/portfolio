@@ -6,6 +6,12 @@ import { motion } from 'framer-motion';
 
 const projects = [
 	{
+		title: 'SmartWallet',
+		description: 'App móvil para cadena de casinos que permite gestionar saldo y puntos, recargar, vincular tarjetas, consultar menú, realizar pedidos con seguimiento en tiempo real y administrar tickets digitales.',
+		image: '/projects/casino.png',
+		tags: ['Flutter', 'Firebase'],
+	},
+	{
 		title: 'Goutdo',
 		description: 'Goutdo es una app que permite a los usuarios encontrar eventos y experiencias únicas a su alrededor, además de conectar con gente que comparte sus mismos intereses.',
 		image: '/projects/goutdo.png',

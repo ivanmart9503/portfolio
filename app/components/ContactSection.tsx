@@ -58,7 +58,7 @@ export default function ContactSection() {
 								Enviar correo
 							</motion.a>
 							<motion.a
-								href="/cv/IvanMartinezResume.pdf"
+								href="/cv/resume.pdf"
 								target="_blank"
 								whileHover={{ scale: 1.05 }}
 								whileTap={{ scale: 0.95 }}
